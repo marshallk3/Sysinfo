@@ -1,3 +1,4 @@
+@echo off
 rem ************************************
 rem * Author : MarshallK 2020
 rem * Title  : System Information Extractor
@@ -5,7 +6,7 @@ rem * Licence: Open Source MIT
 rem * 
 rem * https://github.com/marshallk3/Sysinfo
 rem ************************************
-@echo off
+
 rem #########################
 
 rem SET CurrentDir=%~dp0
