@@ -3,7 +3,7 @@ rem * Author : MarshallK 2020
 rem * Title  : System Information Extractor
 rem * Licence: Open Source MIT 
 rem * 
-rem * 
+rem * https://github.com/marshallk3/Sysinfo
 rem ************************************
 @echo off
 rem #########################
