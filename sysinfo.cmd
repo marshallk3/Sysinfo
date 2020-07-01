@@ -66,5 +66,6 @@ netstat -ano > %Loot%netstat-ano.txt
 netstat -ao > %Loot%netstat-ao.txt
 tracert 1.1.1.1 > %Loot%tracert.txt
 nslookup /exit > %Loot%nslookup.txt 
+nslookup myip.opendns.com. resolver1.opendns.com > %Loot%PublicIP.txt 
 
 rem #########################
