@@ -12,9 +12,10 @@ rem #########################
 rem SET CurrentDir=%~dp0
 set CurrentDir=%cd%
 set Loot=%CurrentDir%\loot\
-echo Current save location:
-echo %CurrentDir%
-echo %Loot%
+echo Save locations:
+echo --------------------------------
+echo Current: %CurrentDir%
+echo Loot   : %Loot%
 echo --------------------------------
 rem #########################
 
@@ -26,7 +27,8 @@ rem System Information
 echo System Information
 
 systeminfo > %Loot%systeminfo.txt
-ipconfig > %Loot%ipconfig.txt
+ipconfig  > %Loot%ipconfig.txt
+ipconfig /all > %Loot%ipconfig-all.txt
 tasklist > %Loot%tasklist.txt
 msinfo32 /nfo %Loot%msinfo32.nfo
 net share > %Loot%net-share.txt
@@ -45,13 +47,13 @@ echo Group Information
 
 net group "Domain Admins" /domain > %Loot%domain-admin.txt
 net group "Domain Users" /domain > %Loot%domain-users.txt
-net group /domain > %Loot%net-group.txt
+net group /domain > %Loot%net-group-all.txt
 
 rem #########################
 
 rem User Information
 echo User Information
-net user /domain %username% > %Loot%net-%username%.txt
+net user /domain %username% > %Loot%net_user_domain-%username%.txt
 net user > %Loot%net-users.txt
 
 rem #########################
